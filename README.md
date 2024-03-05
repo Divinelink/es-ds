@@ -1,0 +1,1 @@
+To add or manipulate the current system emulators on ES-DS Frontend, on Android, navigate to the ES-DS resource directory and then find the custom_systems folder. Then drop the two files found in this repository to this folder. Modify the files accordingly. 
