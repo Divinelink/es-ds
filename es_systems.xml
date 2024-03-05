@@ -1,0 +1,26 @@
+<!-- This is the ES-DE systems configuration file for Android -->
+<systemList>
+<!--     <system>
+        <name>n3ds</name>
+        <fullname>Nintendo 3DS</fullname>
+        <path>%ROMPATH%/n3ds</path>
+        <extension>.3ds .3DS .3dsx .3DSX .app .APP .axf .AXF .cci .CCI .cxi .CXI .elf .ELF .7z .7Z .zip .ZIP</extension>
+        <command label="Citra">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=/storage/emulated/0/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=/data/data/%ANDROIDPACKAGE%/cores/citra_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="Citra (Standalone)">%EMULATOR_CITRA% %ACTIVITY_NO_HISTORY% %EXTRA_SelectedGame%=%ROMSAF%</command>
+        <command label="Citra MMJ (Standalone)">%EMULATOR_CITRA-MMJ% %EXTRA_GamePath%=%ROM%</command>
+        <platform>n3ds</platform>
+        <theme>n3ds</theme>
+    </system> -->
+    <system>
+        <name>switch</name>
+        <fullname>Nintendo Switch</fullname>
+        <path>%ROMPATH%/switch</path>
+        <extension>.nca .NCA .nro .NRO .nso .NSO .nsp .NSP .xci .XCI</extension>
+		<command label="Yuzu">%EMULATOR_YUZU% %ACTION%=android.nfc.action.TECH_DISCOVERED %DATA%=%ROMPROVIDER%</command>
+        <command label="Yuzu EA (Standalone)">%EMULATOR_YUZU-EA% %ACTION%=android.nfc.action.TECH_DISCOVERED %DATA%=%ROMPROVIDER%</command>
+        <command label="Skyline (Standalone)">%EMULATOR_SKYLINE% %ACTION%=android.intent.action.VIEW %DATA%=%ROMPROVIDER%</command>
+        <platform>switch</platform>
+        <theme>switch</theme>
+    </system>
+
+</systemList>
